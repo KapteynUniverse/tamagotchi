@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=McLaren&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">Tamagotchi</h1>
+    <div class="tamagotchi">
+      <h2 id="sub-title">Tamagotchi</h2>
+      <div class="main-screen">
+        <div class="top-buttons">
+          <button class="top-btn btn1">Q</button>
+          <button class="top-btn btn2">W</button>
+          <button class="top-btn btn3">E</button>
+          <button class="top-btn btn4">R</button>
+        </div>
+        <div class="character">
+          <img
+            id="character"
+            class="spritesheet pixelart face-right"
+            src="./assets/character/naked-idle.png"
+            alt="character"
+          />
+        </div>
+        <div class="bottom-buttons">
+          <button class="bottom-btn btn5">T</button>
+          <button class="bottom-btn btn6">Y</button>
+          <button class="bottom-btn btn7">U</button>
+          <button class="bottom-btn btn8">I</button>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="btn">A</button>
+        <button class="btn">S</button>
+        <button class="btn">D</button>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <p id="copyright"></p>
+
+        <script>
+          var currentYear = new Date().getFullYear();
+
+          document.getElementById("copyright").textContent =
+            "Copyright © " + "Asilcan Toper " + currentYear;
+        </script>
+        <a href="www.github.com"><img src="./assets/icons/github.png" /></a>
+        <a href="www.linkedin.com"><img src="./assets/icons/linkedin.png" /></a>
+      </div>
+    </footer>
+  </body>
+  <script src="index.js" charset="UTF-8"></script>
+</html>
